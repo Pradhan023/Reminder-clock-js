@@ -1,0 +1,537 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: #3D087B;
+}
+.clock
+{
+    position: relative;
+    top: 34px;
+    left: 164px;
+    width: 203.85px;
+    height: 77px;
+}
+.dropdown
+{
+    position: absolute;
+    top:149px;
+    left: 164px;
+    border: 1px solid white;
+    background-color: white;
+    line-height: 15px;
+    height: 345px;
+    width: 566px;
+    padding: 10px 0 10px 20px;
+    border-radius: 8px;
+}
+div label
+{
+    color: #3D087BDE;
+    font-size: 17px;
+    padding-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.line
+{
+    border: 1px solid rgb(217, 217, 217);
+    width: 0;
+    height: 30px;
+    margin-left: 17px;
+}
+.dropdown img
+{
+    height: 30px;
+}
+div select
+{
+    width: 281px;
+    height: 45px;
+    border-color: #EDEDED;
+    color: #3D087BDE;
+    border-radius: 5px;
+}
+#wake
+{
+    margin-left: 40px;
+    
+}
+#lunch
+{
+    margin-left: 58px;
+}
+#nap
+{
+    margin-left: 68px;
+}
+#sleep
+{
+    margin-left: 58px;
+}
+.time
+{
+    position: absolute;
+    right: 164px;
+    top: 42px;
+}
+.top
+{
+    display: flex;
+    background-color: white;
+    height: 130px;
+    width: 536px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    gap: 10px;
+}
+.ti
+{
+   color: #3D087B;
+}
+.t
+{
+    height: 90px;
+    width: 80px;
+    background-image: url(./timeline.png);
+    text-align: center;
+    color: #5F0089;
+    line-height: 80px;
+}
+.ap
+{
+    height: 70px;
+    width: 80px;
+    background-image: url(./AM_svg.png);
+    font-size: xx-large;
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+
+}
+.second
+{
+    position: relative;
+    left: 55px;
+    top: -115px;
+    background-color: #FFFFFF;
+    height: 130px;
+    width: 416px;
+    opacity: 71%;
+    z-index: -1;
+    border-radius: 15px;
+}
+.last
+{
+    position: relative;
+    top: -230px;
+    left: 90px;
+    z-index: -1;
+    background-color: #FFFFFF;
+    height: 130px;
+    width: 339px;
+    opacity: 22%;
+    border-radius: 15px;
+}
+.alarm-text
+{
+    position: absolute;
+    bottom: 150px;
+    left: 164px;
+    width: 589px;
+    height: 77px;
+    background-color: rgba(255, 255, 255, 0.219);
+    border-radius: 10px;
+}
+.alarm-text h2
+{
+    color: white;
+    padding: 18px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+}
+.morning-text
+{
+    position: absolute;
+    right: 164px;
+    top: 220px;
+    background-color: white;
+    width: 536px;
+    height: 118px;
+    border-radius: 10px;
+}
+.morning-text h2
+{
+    color: #8E53F0;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 25px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bolder;
+}
+.pic
+{
+    position: absolute;
+    right: 164px;
+    top: 350px;
+}
+button
+{
+    position: absolute;
+    bottom: 89px;
+    width: 299px;
+    height: 50px;
+    left: 164px;
+    font-size: larger;
+    color: #FFFFFF;
+    background-image: linear-gradient(to right ,#6E54EC 3%,#CB52F8 47%,#FC5EFF 98%);
+    border-radius: 5px;
+}
+button:hover
+{
+    background-image: linear-gradient(to left ,#6E54EC 3%,#CB52F8 47%,#FC5EFF 98%);
+}
+button:hover span
+{
+    display: none;
+}
+button:hover::after
+{
+    content: "Party Time";
+}
+.Data
+{
+    position: absolute;
+    bottom: 28px;
+    left: 479px;
+    width: 272px;
+    height: 117px;
+    background-color: rgba(255, 255, 255, 0.219);
+    border-radius: 5px;
+    color: #F25CFE;
+    text-align: justify;
+}
+.Data p
+{
+    padding: 4px;
+    margin-left: 15px;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+}
+
+/* media query mob view 320px*/
+@media screen and (orientation:portrait) and (max-width:320px)
+{
+    .parent
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .clock
+    {
+        width: 120px;
+        height: 50px;
+        left: 30px;
+    }
+    .time
+{
+    right: 164px;
+    left: 10px;
+    top:120px;
+}
+.top
+{
+    height: 100px;
+    width: 300px;
+    gap: 5px;
+}
+.ti
+{
+   font-size: xx-large
+}
+.t
+{
+    height: 60px;
+    width: 40px;
+    line-height: 50px;
+}
+.ap
+{
+    height: 40px;
+    width: 40px;
+    font-size: large;
+    padding-top: 20px;
+
+}
+.second
+{
+    left: 12px;
+    top: -75px;
+    height: 90px;
+    width: 280px;
+}
+.last
+{
+    left: 25px;
+    top: -152px;
+    height: 90px;
+    width: 255px;
+}
+.dropdown
+{
+    top:274px;
+    left: 11px;
+    height: 320px;
+    width: 290px;
+    padding: 18px 0 0px 5px;
+} 
+div label
+{
+    font-size: 14px;
+    padding-left: 4px;
+}
+.line
+{
+    height: 30px;
+    margin: 0px 0 0px 10px;
+}
+.dropdown img
+{
+    height: 20px;
+}
+div select
+{
+    width: 100px;
+    height: 35px;
+}
+#wake
+{
+    margin-left: 25px;
+    
+}
+#lunch
+{
+    margin-left: 42px;
+}
+#nap
+{
+    margin-left: 54px;
+}
+#sleep
+{
+    margin-left: 48px;
+}
+.alarm-text
+{
+    top:640px;
+    left: 12px;
+    width: 295px;
+    height: 77px;
+    background-color: rgba(255, 255, 255, 0.219);
+    border-radius: 10px;
+}
+.alarm-text h2
+{
+    padding: 18px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+}
+button
+{
+    bottom: -190px;
+    width: 279px;
+    height: 50px;
+    left: 21px;
+    font-size: larger;
+    color: #FFFFFF;
+    background-image: linear-gradient(to right ,#6E54EC 3%,#CB52F8 47%,#FC5EFF 98%);
+    border-radius: 5px;
+}
+.Data
+{
+    bottom: -330px;
+    left: 20px;
+    width: 280px;
+    height: 117px;
+}
+.morning-text
+{
+    left: 8px;
+    top: 940px;
+    width: 306px;
+    height: 118px;
+    border-radius: 10px;
+}
+.pic
+{
+    display: flex;
+    left: 10px;
+    top: 1080px;
+    z-index: 1;
+    height: 190px;
+}
+}
+
+/* media query tab view*/
+@media screen and (orientation:landscape)  and (max-width:900px)
+{
+    .parent
+    {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .clock
+    {
+        width: 200px;
+        height: 70px;
+        left: 30px;
+        top: 19px;
+    }
+    .time
+    { 
+       right: 22px;
+       top:30px;
+    }
+   .top
+    {
+       height: 100px;
+       width: 430px;
+       font-size: xx-large;
+       gap: 9px;
+    }
+   .ti
+    {
+       font-size: xx-large;
+       font-family: 'Manrope', sans-serif;
+       font-family: 'Teko', sans-serif;
+    }
+   .t
+    { 
+       height: 60px;
+       width: 60px;
+       line-height: 50px;
+    }
+   .ap
+    {
+       height: 50px;
+       width: 60px;
+       font-size: xx-large;
+       padding-top: 10px;
+
+    }
+   .second
+    {
+       left: 22px;
+       top: -75px;
+       height: 90px;
+       width: 385px;
+    }
+   .last
+    {
+       left: 43px;
+       top: -150px;
+       height: 90px;
+       width: 342px;
+    }
+    .dropdown
+    {
+       top:110px;
+       left: 26px;
+       line-height: 8px;
+       height: 294px;
+       width: 396px;
+       padding: 10px;
+    } 
+    div label
+    {
+       font-size: 20px;
+       padding-left: 11px;
+    }
+   .line
+   {
+    height: 30px;
+    margin: 0px 0 0px 14px;
+   }
+   .dropdown img
+   {
+    height: 28px;
+   }
+   div select
+   {
+    width: 170px;
+    height: 40px;
+   }
+#wake
+{
+    margin-left: 25px;
+    
+}
+#lunch
+{
+    margin-left: 42px;
+}
+#nap
+{
+    margin-left: 54px;
+}
+#sleep
+{
+    margin-left: 48px;
+}
+.alarm-text
+{
+    top:440px;
+    left: 20px;
+    width: 425px;
+    height: 77px;
+}
+.alarm-text h2
+{
+    padding: 10px;
+    font-size: x-large;
+}
+.Data
+{
+    bottom: -68px;
+    left: 25px;
+    width: 420px;
+    height: 170px;
+}
+.Data p
+{
+    padding: 7px;
+    font-size: x-large;
+    font-weight: lighter;
+}
+.morning-text
+{
+    right: 22px;
+    top: 175px;
+    width: 420px;
+    height: 118px;
+    border-radius: 10px;
+}
+.pic
+{
+    display: flex;
+    right: 20px;
+    top: 50%;
+    z-index: 1;
+    height: 270px;
+}
+button
+{
+    bottom: -45px;
+    width: 350px;
+    height: 70px;
+    left: 55%;
+    font-size: xx-large;
+}
+}

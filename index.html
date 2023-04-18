@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminder clock app</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="./script.js"></script>
+</head>
+<body>
+    <div class="parent">
+        <div ><img src="./clock_logo@2x.png" class="clock"></div>
+        <div class="dropdown">
+            <img src="./wake_up.png"> <label for="wake">Set wake up time</label>
+            <select name="wakeup-time" id="wake">
+                <option value="Default">----Default----</option>
+                <option value="6 AM - 7 AM">6 AM - 7 AM</option>
+                <option value="8 AM - 9 AM">8 AM - 9 AM</option>
+                <option value="9 AM - 10 AM">9 AM - 10AM</option>
+                <option value="10 AM - 11 AM">10 AM - 11 AM</option>
+                <option value="11 AM - 12 PM">11 AM - 12 PM</option>
+            </select>
+            <br>
+            <div class="line"></div>
+            <br>
+            <img src="./lunch_time.png"> <label for="lunch">Set lunch time</label>
+            <select name="Lunch-time" id="lunch">
+                <option value="Default">----Default----</option>
+                <option value="12 PM - 1 PM">12 PM - 1 PM</option>
+                <option value="1 PM - 2 PM">1 PM - 2 PM</option>
+                <option value="2 PM - 3 PM">2 PM - 3 PM</option>
+                <option value="3 PM - 4 PM">3 PM - 4 PM</option>
+            </select><br>
+            <div class="line"></div>
+            <br>
+            <img src="./nap_time.png"> <label for="nap">Set nap time</label>
+            <select name="Nap-time" id="nap">
+                <option value="Default">----Default----</option>
+                <option value="4 PM - 5 PM">4 PM - 5 PM</option>
+                <option value="5 PM - 6 PM">5 PM - 6 PM</option>
+            </select><br>
+            <div class="line"></div>
+            <br>
+            <img src="./wake_up.png"> <label for="sleep">Set night time</label>
+            <select  name="Sleep-time" id="sleep">
+                <option value="Default">----Default----</option>
+                <option value="8 PM - 9 PM">8 PM - 9 PM</option>
+                <option value="9 PM - 10 PM">9 PM - 10 PM</option>
+                <option value="10 PM - 11 PM">10 PM - 11 PM</option>
+                <option value="11 PM - 12 PM">11 PM - 12 PM</option>
+            </select>
+        </div>
+        <div class="time">
+            <div class="top">
+                <span class="ti">Time</span>
+                <span id="hrs" class="t">00 hours</span>
+                <span>:</span>
+                <span id="mins" class="t">&nbsp 00 &nbsp  mins</span>
+                <span>:</span>
+                <span id="secs" class="t">&nbsp 00 &nbsp secs</span>
+                <span>:</span>
+                <span id="A-P" class="ap"> AM</span>
+            </div>
+            <div class="second"></div>
+            <div class="last"></div>
+        </div>
+        <div class="alarm-text"><h2 id="morning"></h2></div>
+        <div class="morning-text"><h2 id="heading">GRAB SOME HEALTHY BREAKFAST!!</h2></div>
+        <div class="pic"><img src="./morning.png" class="pic-fun"></div>
+        <button id="set-alarm"><span>Set Alarm</span></button>
+        <div class="Data">
+            <p id="data1">wake up time: ----Default----</p>
+            <p id="data2">lunch time: ----Default----</p>
+            <p id="data3">nap time: ----Default----</p>
+            <p id="data4">night time: ----Default----</p>
+        </div>
+    </div>
+</body>
+</html>
