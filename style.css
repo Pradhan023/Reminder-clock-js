@@ -225,7 +225,7 @@ button:hover::after
 }
 
 /* media query mob view 320px*/
-@media screen and (orientation:portrait) and (min-width:320px)
+@media screen and (orientation:portrait) and (max-width:480px)
 {
     .parent
     {
@@ -295,7 +295,7 @@ button:hover::after
         width: 290px;
         padding: 18px 0 0px 5px;
         right: 0;
-        margin: auto;
+        margin: 0 auto;
     } 
     div label
     {
@@ -335,14 +335,14 @@ button:hover::after
     }
     .alarm-text
     {
-        top:680px;
+        top:650px;
         left: 0px;
         right: 0;
         width: 295px;
         height: 77px;
         background-color: rgba(255, 255, 255, 0.219);
         border-radius: 10px;
-        margin: auto;
+        margin: 0 auto;
     }
     .alarm-text h2
     {
@@ -353,12 +353,12 @@ button:hover::after
     }
     button
     {
-        bottom: -150px;
+        top: 47rem;
         width: 279px;
         height: 50px;
         left: 0px;
         right: 0;
-        margin: auto;
+        margin: 0 auto;
         font-size: larger;
         color: #FFFFFF;
         background-image: linear-gradient(to right ,#6E54EC 3%,#CB52F8 47%,#FC5EFF 98%);
@@ -366,7 +366,7 @@ button:hover::after
     }
     .Data
     {
-        bottom: -310px;
+        top: 55rem;
         left: 0px;
         right: 0;
         margin: auto;
@@ -378,7 +378,7 @@ button:hover::after
         left: 0px;
         right: 0;
         margin: auto;
-        top: 1000px;
+        top: 61rem;
         width: 306px;
         height: 150px;
         border-radius: 10px;
@@ -389,7 +389,7 @@ button:hover::after
         left: 0px;
         right: 0;
         width: 100%;
-        top: 72rem;
+        top: 70rem;
         z-index: 1;
         height: 250px;
     }
@@ -401,7 +401,7 @@ button:hover::after
     }
 
 /* media query tab view*/
-@media screen and (orientation:landscape)  and (max-width:900px)
+@media screen and (orientation:portrait)  and (min-width:900px)
 {
     .parent
     {
