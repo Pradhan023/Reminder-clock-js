@@ -10,7 +10,7 @@ function displayTime() {
     document.getElementById("set-alarm").addEventListener("click", function () {
         var optionList = document.getElementById("wake");
         var selectedOption = optionList.options[optionList.selectedIndex].text;
-
+console.log(selectedOption);
         document.getElementById("data1").innerHTML = "wake up time: " + selectedOption;
     });
 
@@ -118,7 +118,7 @@ function displayTime() {
         hrs = hrs - 12;
     }
     
-    if(hrs<12)
+    if(hrs<10)
     {
         hrs = '0' + hrs;
     }

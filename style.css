@@ -225,158 +225,180 @@ button:hover::after
 }
 
 /* media query mob view 320px*/
-@media screen and (orientation:portrait) and (max-width:320px)
+@media screen and (orientation:portrait) and (min-width:320px)
 {
     .parent
     {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
     .clock
     {
-        width: 120px;
+        width: 130px;
         height: 50px;
         left: 30px;
     }
     .time
-{
-    right: 164px;
-    left: 10px;
-    top:120px;
-}
-.top
-{
-    height: 100px;
-    width: 300px;
-    gap: 5px;
-}
-.ti
-{
-   font-size: xx-large
-}
-.t
-{
-    height: 60px;
-    width: 40px;
-    line-height: 50px;
-}
-.ap
-{
-    height: 40px;
-    width: 40px;
-    font-size: large;
-    padding-top: 20px;
+    {
+        right: 0;
+        left: 0;
+        width: 98%;
+        top:120px;
+    }
+    .top
+    {
+        height: 100px;
+        width: 300px;
+        gap: 5px;
+        margin: auto;
+    }
+    .ti
+    {
+    font-size: xx-large;
+    }
+    .t
+    {
+        height: 60px;
+        width: 40px;
+        line-height: 50px;
+    }
+    .ap
+    {
+        height: 40px;
+        width: 40px;
+        font-size: large;
+        padding-top: 20px;
 
-}
-.second
-{
-    left: 12px;
-    top: -75px;
-    height: 90px;
-    width: 280px;
-}
-.last
-{
-    left: 25px;
-    top: -152px;
-    height: 90px;
-    width: 255px;
-}
-.dropdown
-{
-    top:274px;
-    left: 11px;
-    height: 320px;
-    width: 290px;
-    padding: 18px 0 0px 5px;
-} 
-div label
-{
-    font-size: 14px;
-    padding-left: 4px;
-}
-.line
-{
-    height: 30px;
-    margin: 0px 0 0px 10px;
-}
-.dropdown img
-{
-    height: 20px;
-}
-div select
-{
-    width: 100px;
-    height: 35px;
-}
-#wake
-{
-    margin-left: 25px;
-    
-}
-#lunch
-{
-    margin-left: 42px;
-}
-#nap
-{
-    margin-left: 54px;
-}
-#sleep
-{
-    margin-left: 48px;
-}
-.alarm-text
-{
-    top:640px;
-    left: 12px;
-    width: 295px;
-    height: 77px;
-    background-color: rgba(255, 255, 255, 0.219);
-    border-radius: 10px;
-}
-.alarm-text h2
-{
-    padding: 18px;
-    font-family: 'Manrope', sans-serif;
-    font-weight: bolder;
-    font-size: x-large;
-}
-button
-{
-    bottom: -190px;
-    width: 279px;
-    height: 50px;
-    left: 21px;
-    font-size: larger;
-    color: #FFFFFF;
-    background-image: linear-gradient(to right ,#6E54EC 3%,#CB52F8 47%,#FC5EFF 98%);
-    border-radius: 5px;
-}
-.Data
-{
-    bottom: -330px;
-    left: 20px;
-    width: 280px;
-    height: 117px;
-}
-.morning-text
-{
-    left: 8px;
-    top: 940px;
-    width: 306px;
-    height: 118px;
-    border-radius: 10px;
-}
-.pic
-{
-    display: flex;
-    left: 10px;
-    top: 1080px;
-    z-index: 1;
-    height: 190px;
-}
-}
+    }
+    .second
+    {
+        left: 12px;
+        top: -75px;
+        height: 90px;
+        width: 280px;
+        margin: 0 30px;
+    }
+    .last
+    {
+        left: 25px;
+        top: -152px;
+        height: 90px;
+        width: 255px;
+        margin: 0 30px;
+    }
+    .dropdown
+    {
+        top:274px;
+        left: 0px;
+        height: 320px;
+        width: 290px;
+        padding: 18px 0 0px 5px;
+        right: 0;
+        margin: auto;
+    } 
+    div label
+    {
+        font-size: 14px;
+        padding-left: 4px;
+    }
+    .line
+    {
+        height: 30px;
+        margin: 0px 0 0px 10px;
+    }
+    .dropdown img
+    {
+        height: 20px;
+    }
+    div select
+    {
+        width: 100px;
+        height: 35px;
+    }
+    #wake
+    {
+        margin-left: 25px;
+        
+    }
+    #lunch
+    {
+        margin-left: 42px;
+    }
+    #nap
+    {
+        margin-left: 54px;
+    }
+    #sleep
+    {
+        margin-left: 48px;
+    }
+    .alarm-text
+    {
+        top:680px;
+        left: 0px;
+        right: 0;
+        width: 295px;
+        height: 77px;
+        background-color: rgba(255, 255, 255, 0.219);
+        border-radius: 10px;
+        margin: auto;
+    }
+    .alarm-text h2
+    {
+        padding: 18px;
+        font-family: 'Manrope', sans-serif;
+        font-weight: bolder;
+        font-size: x-large;
+    }
+    button
+    {
+        bottom: -150px;
+        width: 279px;
+        height: 50px;
+        left: 0px;
+        right: 0;
+        margin: auto;
+        font-size: larger;
+        color: #FFFFFF;
+        background-image: linear-gradient(to right ,#6E54EC 3%,#CB52F8 47%,#FC5EFF 98%);
+        border-radius: 5px;
+    }
+    .Data
+    {
+        bottom: -310px;
+        left: 0px;
+        right: 0;
+        margin: auto;
+        width: 280px;
+        height: 117px;
+    }
+    .morning-text
+    {
+        left: 0px;
+        right: 0;
+        margin: auto;
+        top: 1000px;
+        width: 306px;
+        height: 150px;
+        border-radius: 10px;
+    }
+    .pic 
+    {
+        display: flex;
+        left: 0px;
+        right: 0;
+        width: 100%;
+        top: 72rem;
+        z-index: 1;
+        height: 250px;
+    }
+    .pic img
+    {
+        height: 12rem;
+        margin: auto;
+    }
+    }
 
 /* media query tab view*/
 @media screen and (orientation:landscape)  and (max-width:900px)
